@@ -5,16 +5,112 @@ import Footer from "@components/Footer.astro";
 //add to your taste
 ---
 
-<Base title="Change this title">
-  <section class="container flex flex-col gap-5 py-20 text-center">
-    <h1 class="title">Prueba tus clases personalisadas Generales (Titulo)</h1>
-    <h2 class="subtitle">Posicionamiento SEO(Sub title)</h2>
-    <p>
-      Aumentamos la visibilidad de tu sitio web en los motores de búsqueda
-      (parrafo)
-    </p>
-    <div>
-      <button class="btn">Button</button>
+<Base title="Change this title" bgColor="bg-[#FAF8F7]">
+  <Header />
+  <!-- main------------------------------------------------------------------------------------------------- -->
+  <main class="">
+    <section class="my-10 space-y-12 p-14">
+      <figure>
+        <img src="/section-1/bitcoin.png" alt="Image Bitcoin" class="mx-auto" />
+      </figure>
+      <div class="space-y-9 text-center">
+        <h1 class="7xl text-secondary">
+          Visibilizamos todas las tasas de cambio.
+        </h1>
+        <p>
+          Traemos información en tiempo real de las casas de cambio y las
+          monedas más importantes del mundo.
+        </p>
+      </div>
+      <div class="mx-auto max-w-xs">
+        <h2 class="text-primary">Monedas</h2>
+        <div>
+          <ul>
+            <li>Bitcoin</li>
+            <li>Ethereum</li>
+            <li>Ripple</li>
+            <li>Stellar</li>
+          </ul>
+          <ul class="*:flex *:items-center">
+            <li>
+              <span>$ 1.96</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 0.07</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 2.25</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 4.96</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container px-10 py-10">
+      <div class="flex flex-col gap-5 pb-20 text-center">
+        <h1 class="text-secondary">Escoge el plan que mejor se ajuste a ti.</h1>
+        <p class="text-xl">
+          Cualquier plan te da acceso completo a nuestra plataforma.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div
+          class="relative -z-10 flex flex-col items-center rounded-xl bg-white p-4 py-10 shadow-xl"
+        >
+          <div
+            class="absolute top-0 z-10 -translate-y-1/2 rounded-2xl bg-primary p-2"
+          >
+            <p class="text-white">recomedado</p>
+          </div>
+
+          <div class="space-y-6 *:text-center">
+            <h3 class="text-black">Pago Anual</h3>
+            <h1 class="flex justify-center font-secondary text-black">
+              <span class="text-2xl">$</span>
+              <span class="text-7xl">99</span>
+            </h1>
+            <h3 class="text-2xl">*Ahorras $129 comparado al plan mensual.</h3>
+          </div>
+          <div class="flex justify-center py-5">
+            <button
+              class="flex items-center gap-4 rounded-md border-4 border-primary bg-primary-soft p-5 px-10 text-3xl font-semibold text-secondary"
+              >Escoger este <span
+                class="icon-[humbleicons--arrow-right] h-14 w-14 text-primary"
+              ></span></button
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main------------------------------------------------------------------------------------------------- -->
+
+  <footer class="w-full bg-primary py-16">
+    <div class="container flex items-center justify-center gap-14">
+      <div class="">
+        <ul>
+          <li class="text-xl text-white">Linkedin</li>
+          <li class="text-xl text-white">Crunchbase</li>
+          <li class="text-xl text-white">Hackernews</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="flex flex-col items-center gap-4">
+          <img src="logo/logo.png" alt="Logo Batatabit" />
+        </figure>
+        <p class="text-xs text-white">® Batatabit 2020</p>
+      </div>
     </div>
-  </section>
+  </footer>
 </Base>
