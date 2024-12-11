@@ -16,24 +16,24 @@ export default {
   ],
   theme: {
     fontFamily: {
-      main: ["Barlow", ...defaultTheme.fontFamily.sans],
-      secondary: ["Ubuntu", ...defaultTheme.fontFamily.sans],
+      main: ["DM Sans", ...defaultTheme.fontFamily.sans],
+      secondary: ["Inter", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#F7931A", // Color secundario
+          DEFAULT: "#FF0000", // Color secundario
           light: "#ff5757", // Variante clara
           dark: "#B22222", // Variante oscura
           accent: "#C72C29", // Variante de acento
           soft: "#FFE4E4", // Variante suave
         },
         secondary: {
-          DEFAULT: "#201E1C", // Color principal
+          DEFAULT: "#3a3a3a", // Color principal
           light: "#5a5a5a", // Variante clara
           dark: "#1a1a1a", // Variante oscura
           //no hay variable de acento de esta paleta de color secundary
-          soft: "#f2f2f2", // Variante suave
+          // soft: "#f2f2f2", // Variante suave
         },
       },
     },
@@ -42,7 +42,7 @@ export default {
     require("flowbite/plugin"),
     require("@tailwindcss/forms"),
     iconsPlugin({ prefix: "icon" }),
-    require('preline/plugin'),
+    require("preline/plugin"),
     require("@tailwindcss/aspect-ratio"),
     dynamicIconsPlugin({ prefix: "icon" }),
   ],
