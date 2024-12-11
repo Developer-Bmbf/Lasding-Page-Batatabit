@@ -1,20 +1,57 @@
 ---
 import Base from "@layouts/Base.astro";
-import Navbar from "@components/Navbar.astro";
+import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 //add to your taste
 ---
 
 <Base title="Change this title">
-  <section class="container flex flex-col gap-5 py-20 text-center">
-    <h1 class="title">Prueba tus clases personalisadas Generales (Titulo)</h1>
-    <h2 class="subtitle">Posicionamiento SEO(Sub title)</h2>
-    <p>
-      Aumentamos la visibilidad de tu sitio web en los motores de búsqueda
-      (parrafo)
-    </p>
-    <div>
-      <button class="btn">Button</button>
-    </div>
-  </section>
+  <Header />
+  <main>
+    <section class="my-10 space-y-12 p-14">
+      <figure>
+        <img src="/section-1/bitcoin.png" alt="Image Bitcoin" class="mx-auto" />
+      </figure>
+      <div class="space-y-9 text-center">
+        <h1 class="text-secondary">Visibilizamos todas las tasas de cambio.</h1>
+        <p>
+          Traemos información en tiempo real de las casas de cambio y las
+          monedas más importantes del mundo.
+        </p>
+      </div>
+      <div class="mx-auto max-w-xs">
+        <h2 class="text-primary">Monedas</h2>
+        <div>
+          <ul>
+            <li>Bitcoin</li>
+            <li>Ethereum</li>
+            <li>Ripple</li>
+            <li>Stellar</li>
+          </ul>
+          <ul class="*:flex *:items-center">
+            <li>
+              <span>$ 1.96</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 0.07</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 2.25</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+            <li>
+              <span>$ 4.96</span><span
+                class="icon-[ic--twotone-trending-down] mb-1 size-5 text-red-500"
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </Base>
