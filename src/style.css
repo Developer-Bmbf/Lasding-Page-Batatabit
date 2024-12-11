@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .a {
+    @apply relative inline-flex flex-col;
+
+    /* Crear un pseudo-elemento para simular el botón */
+    &::after {
+      content: "";
+      @apply mx-auto h-0.5 w-0 bg-primary transition-all duration-200;
+    }
+
+    /* Expandir el pseudo-elemento en hover */
+    &:hover::after {
+      @apply w-full; /* Esto hace que el pseudo-elemento se expanda al pasar el mouse sobre <a> */
+    }
+  }
+
+  .large-title {
+    @apply mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .title {
+    @apply mb-3 text-2xl font-bold leading-snug text-gray-800 sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .subtitle {
+    @apply flex items-center gap-2 pb-3 text-base font-semibold leading-normal text-gray-700 sm:text-lg md:text-xl lg:text-2xl;
+
+    &:before {
+      content: "//";
+      @apply leading-none text-primary;
+    }
+  }
+
+  .paragraph {
+    @apply text-sm font-normal leading-relaxed text-gray-600 sm:text-base md:text-lg;
+  }
+
+  .duration {
+    @apply transition-all duration-300;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-r from-secondary/50 to-primary-dark;
+  }
+
+  .list {
+    @apply space-y-2 font-secondary font-semibold;
+
+    li {
+      @apply flex items-center;
+
+      &:before {
+        content: "";
+        @apply icon-[lets-icons--check-fill] mr-1.5 size-6 text-primary;
+      }
+    }
+  }
+
+  .btn {
+    @apply transition-all duration-300;
+    @apply bg-gradient-to-r from-primary to-secondary/50;
+    @apply relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md bg-primary px-4 py-3 font-secondary text-base font-semibold text-white;
+
+    &:hover {
+      @apply bg-gradient-to-l;
+
+      &:after {
+        @apply translate-x-1.5;
+      }
+    }
+
+    /* &:before {
+       content: "";
+       @apply transition-transform duration-200;
+      @apply bg-gradient-to-r opacity-100  from-primary to-primary-accent;
+       @apply absolute w-full h-full left-0 top-0 -z-[1];
+     }*/
+    &:after {
+      content: "";
+      @apply transition-transform duration-200;
+      @apply icon-[mingcute--arrow-right-line] ml-2 flex size-5;
+    }
+  }
+
+
+}
+
+@layer base {
+  h1 {
+    @apply font-secondary text-3xl font-black sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply font-secondary text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply font-secondary text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply font-secondary text-lg font-medium sm:text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h5 {
+    @apply font-secondary text-base font-medium sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  h6 {
+    @apply font-secondary text-sm font-medium sm:text-base md:text-lg lg:text-xl;
+  }
+
+  body {
+    @apply paragraph;
+  }
+
+}
+
+@keyframes scale-up {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.scale-animation {
+  animation: scale-up 3.5s infinite;
+}
+
+::selection {
+  color: #fff;
+  background: #333333;
+}

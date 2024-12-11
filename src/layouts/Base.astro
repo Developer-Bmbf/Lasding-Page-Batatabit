@@ -1,0 +1,50 @@
+---
+import "../style.css";
+
+interface Props {
+  title: string;
+  bgColor?: string;
+  font?: string;
+}
+// Cambia la variable font por la fuente insertada en el ddocumento de estilos (style.css)
+const { title, font = " font-inter" } = Astro.props;
+var { bgColor = "bg-white" } = Astro.props;
+if (bgColor.trim() == "") {
+  bgColor = "bg-white";
+}
+---
+
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!--Cambiar icono depende al a pagina -->
+    <link
+      rel="icon"
+      href="https://famavi.com/wp-content/uploads/2023/03/favicon-famavi.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.min.js"
+    ></script>
+    <title>{title}</title>
+  </head>
+  <!-- Cambiar a class={bgColor+font} cuando quieras cambiar de fuente -->
+  <body class={bgColor + font + " p"}>
+    <slot />
+
+    <!-- Flowbite Script -->
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+  </body>
+</html>
