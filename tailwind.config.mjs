@@ -22,14 +22,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FF0000", // Color secundario
+          DEFAULT: "#F7931A", // Color secundario
           light: "#ff5757", // Variante clara
           dark: "#B22222", // Variante oscura
           accent: "#C72C29", // Variante de acento
           soft: "#FFE4E4", // Variante suave
         },
         secondary: {
-          DEFAULT: "#3a3a3a", // Color principal
+          DEFAULT: "#201E1C", // Color principal
           light: "#5a5a5a", // Variante clara
           dark: "#1a1a1a", // Variante oscura
           //no hay variable de acento de esta paleta de color secundary

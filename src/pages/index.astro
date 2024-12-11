@@ -6,15 +6,46 @@ import Footer from "@components/Footer.astro";
 ---
 
 <Base title="Change this title">
-  <section class="container flex flex-col gap-5 py-20 text-center">
-    <h1 class="title">Prueba tus clases personalisadas Generales (Titulo)</h1>
-    <h2 class="subtitle">Posicionamiento SEO(Sub title)</h2>
-    <p>
-      Aumentamos la visibilidad de tu sitio web en los motores de búsqueda
-      (parrafo)
-    </p>
-    <div>
-      <button class="btn">Button</button>
+  <!-- main------------------------------------------------------------------------------------------------- -->
+  <main class="">
+    <section class="py-10">
+      <div class="pb-5 text-center">
+        <h1 class="text-secondary">Escoge el plan que mejor se ajuste a ti.</h1>
+        <p class="text-xl">
+          Cualquier plan te da acceso completo a nuestra plataforma.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="bg-white p-5 shadow-inner">
+          <div class="space-y-3 *:text-center">
+            <h5 class="">Pago Anual</h5>
+            <h1 class="">$99</h1>
+            <p class="">*Ahorras $129 comparado al plan mensual.</p>
+          </div>
+          <div class="flex justify-center py-3">
+            <button class="border border-primary p-2">Escoger este</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main------------------------------------------------------------------------------------------------- -->
+
+  <footer class="w-full bg-primary py-16">
+    <div class="container flex items-center justify-center gap-14">
+      <div class="">
+        <ul>
+          <li class="text-xl text-white">Linkedin</li>
+          <li class="text-xl text-white">Crunchbase</li>
+          <li class="text-xl text-white">Hackernews</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="flex flex-col items-center gap-4">
+          <img src="logo/logo.png" alt="Logo Batatabit" />
+        </figure>
+        <p class="text-xs text-white">® Batatabit 2020</p>
+      </div>
     </div>
-  </section>
+  </footer>
 </Base>
