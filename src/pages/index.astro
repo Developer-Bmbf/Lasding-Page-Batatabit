@@ -2,6 +2,7 @@
 import Base from "@layouts/Base.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import CardAttributes from "@components/card-attributes.astro";
 //add to your taste
 ---
 
@@ -73,91 +74,72 @@ import Footer from "@components/Footer.astro";
         <p>Confiable y diseñado para su uso diario.</p>
       </div>
       <div class="space-y-7">
-        <Card_attributes
+        <CardAttributes
           title="Tiempo real"
           description="Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento."
         >
           <img src="/atributes/clock.png" alt="Icon Clock" />
-        </Card_attributes>
-        <Card_attributes
+        </CardAttributes>
+        <CardAttributes
           title="No hay tasas escondidas"
           description="Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo."
         >
           <img src="/atributes/eye.png" alt="Icon Clock" />
-        </Card_attributes>
-        <Card_attributes
+        </CardAttributes>
+        <CardAttributes
           title="Compara monedas"
           description="No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual."
         >
           <img src="/atributes/dollar-sign.png" alt="Icon Clock" />
-        </Card_attributes>
-        <Card_attributes
+        </CardAttributes>
+        <CardAttributes
           title="Información confiable"
           description="Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan."
         >
           <img src="/atributes/check-circle.png" alt="Icon Clock" />
-        </Card_attributes>
+        </CardAttributes>
       </div>
     </section>
     <section class="relative flex justify-center">
       <img src="/section-3/bitcoinbaby.png" alt="Chica con Ojos de bitcoin" />
       <h1 class="absolute top-40 text-white">Conócelo hoy.</h1>
     </section>
-    <<<<<<< HEAD
-    <section class="mx-auto max-w-md px-10 py-10">
-      =======
-      <section class="container px-10 py-10">
-        >>>>>>> 52f9594174d5ba74a27512f4eb4b3d94796ed59c
-        <div class="flex flex-col gap-5 pb-20 text-center">
-          <h1 class="text-secondary">
-            Escoge el plan que mejor se ajuste a ti.
-          </h1>
-          <p class="text-xl">
-            Cualquier plan te da acceso completo a nuestra plataforma.
-          </p>
-        </div>
-        <div class="flex justify-center">
+    <section class="container px-10 py-10">
+      <div class="flex flex-col gap-5 pb-20 text-center">
+        <h1 class="text-secondary">Escoge el plan que mejor se ajuste a ti.</h1>
+        <p class="text-xl">
+          Cualquier plan te da acceso completo a nuestra plataforma.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div
+          class="relative -z-10 flex flex-col items-center rounded-xl bg-white p-4 py-10 shadow-xl"
+        >
           <div
-            class="relative -z-10 flex flex-col items-center rounded-xl bg-white p-4 py-10 shadow-xl"
+            class="absolute top-0 z-10 -translate-y-1/2 rounded-2xl bg-primary p-2"
           >
-            <div
-              class="absolute top-0 z-10 -translate-y-1/2 rounded-2xl bg-primary p-2"
-            >
-              <<<<<<< HEAD
-              <p class="text-white">Recomedado</p>
-              =======
-              <p class="text-white">recomedado</p>
-              >>>>>>> 52f9594174d5ba74a27512f4eb4b3d94796ed59c
-            </div>
+            <p class="text-white">recomedado</p>
+          </div>
 
-            <div class="space-y-6 *:text-center">
-              <h3 class="text-black">Pago Anual</h3>
-              <h1 class="flex justify-center font-secondary text-black">
-                <span class="text-2xl">$</span>
-                <span class="text-7xl">99</span>
-              </h1>
-              <h3 class="text-2xl">*Ahorras $129 comparado al plan mensual.</h3>
-            </div>
-            <div class="flex justify-center py-5">
-              <button
-                <<<<<<<
-                HEAD
-                class="flex items-center gap-4 rounded-md border-[3px] border-primary bg-primary-soft p-3 px-7 text-2xl font-bold text-secondary"
-                ><span>Escoger este</span>
-                <span
-                  class="icon-[humbleicons--arrow-right] mt-0.5 size-10 text-primary"
-                  class="flex items-center gap-4 rounded-md border-4 border-primary bg-primary-soft p-5 px-10 text-3xl font-semibold text-secondary"
-                  >Escoger este <span
-                    class="icon-[humbleicons--arrow-right] h-14 w-14 text-primary"
-                    >>>>>>> 52f9594174d5ba74a27512f4eb4b3d94796ed59c ></span
-                  ></span
-                >
-              </button>
-            </div>
+          <div class="space-y-6 *:text-center">
+            <h3 class="text-black">Pago Anual</h3>
+            <h1 class="flex justify-center font-secondary text-black">
+              <span class="text-2xl">$</span>
+              <span class="text-7xl">99</span>
+            </h1>
+            <h3 class="text-2xl">*Ahorras $129 comparado al plan mensual.</h3>
+          </div>
+          <div class="flex justify-center py-5">
+            <button
+              class="flex items-center gap-4 rounded-md border-4 border-primary bg-primary-soft p-5 px-10 text-3xl font-semibold text-secondary"
+              >Escoger este <span
+                class="icon-[humbleicons--arrow-right] h-14 w-14 text-primary"
+              ></span></button
+            >
           </div>
         </div>
-      </section>
-      <Footer />
+      </div>
     </section>
-  </main></Base
->
+  </main>
+  <Footer />
+</Base>
